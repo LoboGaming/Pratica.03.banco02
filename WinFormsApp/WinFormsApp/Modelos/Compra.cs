@@ -1,14 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
-namespace WinFormsApp.Itens
+namespace WinFormsApp.Modelos
 {
-    internal class Produto
+    internal class Compra
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idProduto { get; set; }
-        public string nomeProduto { get; set; }  = string.Empty;
+        public int idCompra { get; set; }
+        public string dataCompra { get; set; } = string.Empty;
     }
 }

@@ -2,13 +2,13 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace WinFormsApp.Itens
+namespace WinFormsApp.Modelos
 {
-    internal class Produto
+    internal class FuncaoFuncionario
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idProduto { get; set; }
-        public string nomeProduto { get; set; }  = string.Empty;
+        public int idFuncaoFuncionario { get; set; }
+        public string nomeFuncaoFuncionario { get; set; } = string.Empty;
     }
 }
