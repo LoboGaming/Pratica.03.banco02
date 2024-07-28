@@ -17,5 +17,17 @@ namespace WinFormsApp.BancoDeDados
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity<FuncaoFuncionario>()
+                .HasMany(ff => ff.Funcionarios)
+                .WithOne(f => f.FuncaoFuncionario)
+                .HasForeignKey(f => f.idFuncaoFuncionario);
+                
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

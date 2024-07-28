@@ -11,5 +11,6 @@ namespace WinFormsApp.Modelos
         public int idFuncionario { get; set; }
         public string nomeFuncionario { get; set; } = string.Empty;
         public int idFuncaoFuncionario { get; set; }
+        public FuncaoFuncionario FuncaoFuncionario { get; set; }
     }
 }

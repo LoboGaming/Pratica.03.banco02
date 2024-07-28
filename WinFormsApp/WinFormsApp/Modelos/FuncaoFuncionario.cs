@@ -10,5 +10,6 @@ namespace WinFormsApp.Modelos
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idFuncaoFuncionario { get; set; }
         public string nomeFuncaoFuncionario { get; set; } = string.Empty;
+        public ICollection<Funcionario> Funcionarios { get; set; }
     }
 }
